@@ -27,9 +27,7 @@ jobs:
         run: |
           ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ''
           ssh-keyscan -H 44.220.141.191 >> ~/.ssh/known_hosts
-
-
-    
+          
       - name: Envio das imagens SCP
         if: always()
         run: |
