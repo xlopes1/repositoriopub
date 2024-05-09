@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu:latest
     steps:
       - name: Checkout
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Instalação do SSH
         run: sudo apt-get install -y openssh-client
